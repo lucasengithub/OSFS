@@ -18,7 +18,7 @@ mksquashfs / /Out/CurrentState.system -e boot home root Users Out proc sys dev t
 echo "$(tput setaf 2)System image created at /Out/CurrentState.system$(tput sgr0)"
 echo
 echo "$(tput setaf 2)Activate the image changing the name to a suitable slot name before using it. (a.system, b.system, etc.)$(tput sgr0)"
-echo  use 'updateab' to do that.
+echo  use "updateab" to do that.
 echo
 echo bye
 echo
