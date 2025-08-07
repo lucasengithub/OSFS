@@ -15,8 +15,8 @@ echo "$(tput setaf 1)$(tput bold)Press Enter to continue and CTRL+C to cancel.$(
 read -r
 echo
 echo "$(tput setaf 2)Creating system image...$(tput sgr0)"
-mkdir -p /Out
 rm -fr /Out
+mkdir -p /Out
 mksquashfs / /Out/CurrentState.system -e boot home root Users Out proc sys dev tmp run var/tmp var/run var/lock mnt media lost+found
 echo "$(tput setaf 2)System image created at /Out/CurrentState.system$(tput sgr0)"
 echo
