@@ -60,6 +60,7 @@ if [ "$NSM_MODE" = true ]; then
     git clone  https://github.com/lucasengithub/OSFS
 else
     echo "$(tput setaf 6)Cloning ostree with submodules...$(tput sgr0)"
+    rm -rf /etc/skel
     git clone --recurse-submodules https://github.com/lucasengithub/OSFS
 fi
 
