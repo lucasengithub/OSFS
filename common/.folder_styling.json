@@ -1,0 +1,32 @@
+{
+    "dev": {
+        "pretty_name": "Devices",
+        "pretty_name_es": "Dispositivos"
+    },
+    "media": {
+        "pretty_name": "Media",
+        "pretty_name_es": "Medios"
+    },
+    "System": {
+        "pretty_name_es": "Sistema"
+    },
+    "Users": {
+        "pretty_name_es": "Usuarios"
+    },
+    "boot": {
+        "pretty_name": "Boot",
+        "pretty_name_es": "Arranque"
+    },
+    "tmp": {
+        "pretty_name": "Temporary Files",
+        "pretty_name_es": "Archivos Temporales"
+    },
+    "Garage": {
+        "pretty_name": "Garage",
+        "pretty_name_es": "Garaje"
+    },
+    "Guests": {
+        "pretty_name": "Guest Software",
+        "pretty_name_es": "Software Invitado"
+    }
+}
