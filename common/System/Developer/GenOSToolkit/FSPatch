@@ -17,7 +17,7 @@ read -r
 mkdir ~/.newFS
 cd ~/.newFS
 
-git clone https://github.com/lucasengithub/OSFS
+git clone --recurse-submodules https://github.com/lucasengithub/OSFS
 
 cp -rvf ~/.newFS/OSFS/common/* /
 cp -rvf ~/.newFS/OSFS/common/.[^.]* / 2>/dev/null || true

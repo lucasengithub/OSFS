@@ -3,7 +3,7 @@
 # --- Default Values ---
 HOMEDIR_BASE="/Users"
 SHELL="/usr/bin/fish"
-DEFAULT_GROUPS="disk lp floppy audio cdrom dialout video netdev games users"
+DEFAULT_GROUPS="disk lp floppy audio cdrom dialout video netdev games users seat"
 
 # --- Usage Message ---
 usage() {

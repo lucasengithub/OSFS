@@ -1,0 +1,3 @@
+. /etc/profile
+
+export PATH="$HOME/Guests/Development/bin:$PATH"
