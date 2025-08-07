@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "Package Manager Warning"
+echo "======================="
+
+echo "$(basename "$0") is not available. To use it, create an OS Guest with 'guestso os-add' or add packages to the user with 'brew install'."
