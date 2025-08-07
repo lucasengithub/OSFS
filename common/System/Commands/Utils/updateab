@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "Update the system partition and manage fs overlays"
+echo "====================="
+echo
+echo "$(tput setaf 2)$(tput bold) Not implemented $(tput sgr0)"
