@@ -26,3 +26,4 @@ echo "$(tput setaf 2)File system patched$(tput sgr0)"
 rm -rf ~/.newFS
 
 chmod +x /System/Commands/Utils/*
+source /etc/profile
