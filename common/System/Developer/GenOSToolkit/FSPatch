@@ -57,10 +57,10 @@ cd ~/.newFS
 
 if [ "$NSM_MODE" = true ]; then
     echo "$(tput setaf 6)Cloning ostree without submodules...$(tput sgr0)"
-    git clone --recurse-submodules https://github.com/lucasengithub/OSFS
+    git clone  https://github.com/lucasengithub/OSFS
 else
     echo "$(tput setaf 6)Cloning ostree with submodules...$(tput sgr0)"
-    git clone https://github.com/lucasengithub/OSFS
+    git clone --recurse-submodules https://github.com/lucasengithub/OSFS
 fi
 
 cp -rvf ~/.newFS/OSFS/common/* /
