@@ -5,7 +5,7 @@ echo "======================"
 echo
 echo "This tool creates a system image from the current system state to be used for booting."
 echo
-echo "$(tput setaf 3)Warning: This will overwrite existing files in the /Out directory.$(tput sgr0)"
+echo "$(tput setaf 3)Warning: This will overwrite existing files in the $HOME/OSOut directory.$(tput sgr0)"
 echo
 echo "You must be root to run this script."
 echo
