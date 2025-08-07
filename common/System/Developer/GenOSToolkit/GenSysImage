@@ -1,6 +1,6 @@
 #!/bin/sh
 echo
-echo "Regenerate System Image"
+echo "Generate System Image"
 echo "============================="
 echo
 echo "This tool creates a system image from the current system state to be used for booting."
