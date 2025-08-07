@@ -4,3 +4,4 @@ echo "Manage Guest Software"
 echo "====================="
 echo
 echo "$(tput setaf 2)$(tput bold) Not implemented $(tput sgr0)"
+echo

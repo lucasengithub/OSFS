@@ -18,3 +18,4 @@ echo
 echo "$(tput setaf 2)Home skeleton regenerated$(tput sgr0)"
 echo 
 echo "$(tput setaf 6)You may need to log out and log in again to see the changes.$(tput sgr0)" 
+echo

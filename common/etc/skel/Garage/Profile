@@ -1,3 +1,4 @@
 . /etc/profile
 
 export PATH="$HOME/Guests/Development/bin:$PATH"
+eval "$($HOME/Guests/Development/bin/brew shellenv)"

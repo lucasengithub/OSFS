@@ -46,4 +46,4 @@ rm -rf ~/.newFS
 chmod +x /System/Commands/Utils/*
 chmod +x /System/Developer/GenOSToolkit/*
 source /etc/profile
-
+echo
