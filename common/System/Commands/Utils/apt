@@ -1,4 +1,5 @@
 #!/bin/sh
+echo
 echo "Package Manager Warning"
 echo "======================="
 

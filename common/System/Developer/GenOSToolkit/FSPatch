@@ -6,6 +6,7 @@ if [ "$1" = "--nsm" ]; then
     NSM_MODE=true
 fi
 
+echo
 echo "FileSystem Patching Tool"
 echo "========================"
 echo
