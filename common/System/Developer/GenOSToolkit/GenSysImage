@@ -20,7 +20,7 @@ mkdir -p /Out
 mksquashfs / /Out/CurrentState.System -e home sys lost+found proc dev 'root/*' 'Users/*' 'Out' 'tmp/*' 'run/*' 'var/tmp/*' 'var/run/*' 'var/lock/*' 'var/log/*' 'var/cache/*' 'var/spool/*' 'mnt/*' 'media/*' 'Boot/*' 'boot/*'
 echo "$(tput setaf 2)System image created at /Out/CurrentState.System$(tput sgr0)"
 echo
-echo "$(tput setaf 2)Activate the image changing the name to a suitable slot name before using it. (a.system, b.system, etc.)$(tput sgr0)"
+echo "$(tput setaf 2)Activate the image changing the name to a suitable slot name before using it. (A.System, B.System, etc.)$(tput sgr0)"
 echo
 echo "Use 'updateab' to do that."
 echo
