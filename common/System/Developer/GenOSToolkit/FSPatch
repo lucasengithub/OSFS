@@ -63,6 +63,10 @@ else
     git clone --recurse-submodules https://github.com/lucasengithub/OSFS
 fi
 
+echo "$(tput setaf 6)Cleaning up...$(tput sgr0)"
+find ~/.newFS/OSFS/common -name ".gitkeep" -type f -delete
+
+echo "$(tput setaf 6)Copying files to the root directory...$(tput sgr0)"
 cp -rvf ~/.newFS/OSFS/common/* /
 cp -rvf ~/.newFS/OSFS/common/.[^.]* / 2>/dev/null || true
 echo
