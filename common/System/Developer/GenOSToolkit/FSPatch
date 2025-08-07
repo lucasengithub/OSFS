@@ -1,9 +1,20 @@
 #!/bin/sh
 
+# Check for --nsm option
+NSM_MODE=false
+if [ "$1" = "--nsm" ]; then
+    NSM_MODE=true
+fi
+
 echo "FileSystem Patching Tool"
 echo "========================"
 echo
-echo "This tool will patch the file system with the latest changes."
+if [ "$NSM_MODE" = true ]; then
+    echo "This tool will patch the file system with the latest changes (without submodules)."
+else
+    echo "This tool will patch the file system with the latest changes including items from the submodules."
+fi
+echo "If you don't want to clone the submodules, you can run this script with the --nsm option."
 echo
 echo "$(tput setaf 3)Warning: This will overwrite existing files in the / directory.$(tput sgr0)"
 echo
@@ -17,7 +28,13 @@ read -r
 mkdir ~/.newFS
 cd ~/.newFS
 
-git clone --recurse-submodules https://github.com/lucasengithub/OSFS
+if [ "$NSM_MODE" = true ]; then
+    echo "$(tput setaf 6)Cloning ostree without submodules...$(tput sgr0)"
+    git clone https://github.com/lucasengithub/OSFS
+else
+    echo "$(tput setaf 6)Cloning ostree with submodules...$(tput sgr0)"
+    git clone --recurse-submodules https://github.com/lucasengithub/OSFS
+fi
 
 cp -rvf ~/.newFS/OSFS/common/* /
 cp -rvf ~/.newFS/OSFS/common/.[^.]* / 2>/dev/null || true
@@ -27,3 +44,4 @@ rm -rf ~/.newFS
 
 chmod +x /System/Commands/Utils/*
 source /etc/profile
+

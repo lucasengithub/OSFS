@@ -1,1 +1,1 @@
-/Users/lucaspeinado/Garage/Profile
+Garage/Profile
