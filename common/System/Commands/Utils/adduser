@@ -95,3 +95,6 @@ if [ $? -ne 0 ]; then
   echo "Error creating user $USERNAME" >&2
   exit 1
 fi
+
+# --- Success Message ---
+echo "User $USERNAME created successfully with options: $OPTIONS"
