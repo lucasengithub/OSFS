@@ -1,0 +1,24 @@
+#!/bin/sh
+echo
+echo "Regenerate System Image"
+echo "============================="
+echo
+echo "This tool creates a system image from the current system state to be used for booting."
+echo
+echo "$(tput setaf 3)Warning: This will create a system image that may overwrite existing data.$(tput sgr0)"
+echo
+echo "$(tput setaf 4)You are responsible for any changes made to the file system. Ensure you know what you are doing before proceeding.$(tput sgr0)"
+echo "$(tput setaf 1)_____________________________________________$(tput sgr0)"
+echo "$(tput setaf 1)$(tput bold)Press Enter to continue and CTRL+C to cancel.$(tput sgr0)"
+read -r
+echo
+echo "$(tput setaf 2)Creating system image...$(tput sgr0)"
+mkdir -p /Out
+mksquashfs / /Out/state.system -e boot home root Users Out
+echo "$(tput setaf 2)System image created at /Out/state.system$(tput sgr0)"
+echo
+echo "$(tput setaf 2)Activate the image changing the name to a suitable slot name before using it. (a.system, b.system, etc.)$(tput sgr0)"
+echo  use 'updateab' to do that.
+echo
+echo bye
+echo

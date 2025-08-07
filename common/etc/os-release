@@ -1,7 +1,5 @@
-NAME="Alpine Linux"
+NAME="OS"
 ID=alpine
 ID_LIKE=alpine
 VERSION_ID=3.23.0_alpha20250612
-PRETTY_NAME="Alpine Linux edge"
-HOME_URL="https://alpinelinux.org/"
-BUG_REPORT_URL="https://gitlab.alpinelinux.org/alpine/aports/-/issues"
+PRETTY_NAME="AN OS WITH NO NAME"
