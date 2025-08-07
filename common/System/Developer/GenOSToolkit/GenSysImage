@@ -18,7 +18,7 @@ echo "$(tput setaf 2)Creating system image...$(tput sgr0)"
 rm -fr ~/OSOut
 mkdir -p ~/OSOut
 mksquashfs / ~/OSOut/CurrentState.System -e home sys lost+found proc dev 'root/*' 'Users/*' 'Out' 'tmp/*' 'run/*' 'var/tmp/*' 'var/run/*' 'var/lock/*' 'var/log/*' 'var/cache/*' 'var/spool/*' 'mnt/*' 'media/*' 'Boot/*' 'boot/*'
-echo "$(tput setaf 2)System image created at ~/OSOut/CurrentState.System$(tput sgr0)"
+echo "$(tput setaf 2)System image created at $HOME/OSOut/CurrentState.System$(tput sgr0)"
 echo
 echo "$(tput setaf 2)Activate the image changing the name to a suitable slot name before using it. (A.System, B.System, etc.)$(tput sgr0)"
 echo
