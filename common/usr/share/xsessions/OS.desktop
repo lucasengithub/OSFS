@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=OS
 Comment=Operative system session
-Exec=wayfire
+Exec=/System/Commands/Desktop/Init
 Type=Application

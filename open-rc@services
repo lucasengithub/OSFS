@@ -27,4 +27,3 @@
        udev-postmount |      default                           
           udev-settle |                                 sysinit
          udev-trigger |                                 sysinit
-os1:~# 

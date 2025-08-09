@@ -1,0 +1,10 @@
+#!/bin/sh
+echo
+echo "Launch Desktop Environment"
+echo "=========================="
+echo
+echo "Starting Wayfire..."
+wayfire &
+echo
+echo "$(tput setaf 2)Desktop Environment Started$(tput sgr0)"
+echo
