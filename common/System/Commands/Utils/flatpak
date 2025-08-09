@@ -2,7 +2,6 @@
 
 # Flatpak force user installation 
 
-
 if [ "$1" = "install" ]; then
     pkg="${@: -1}"
     found=0
