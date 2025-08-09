@@ -12,7 +12,9 @@ if [ "$1" = "install" ]; then
         fi
     done
     if [ $found -eq 0 ]; then
-        flatpak remote-add --if-not-exists --user flathub "$pkg"
+        /usr/bin/flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
     fi
 fi
-flatpak "$@"
+
+# Call the real flatpak binary with full path to avoid recursion
+/usr/bin/flatpak "$@"
